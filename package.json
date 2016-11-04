@@ -1,0 +1,14 @@
+{
+  "name": "serverless-line-messaging-api-endpoint",
+  "version": "0.0.1",
+  "description": "Endpoint for LINE Messaging API",
+  "main": "handler.js",
+  "scripts": {
+    "deploy:staging": "sls deploy --stage staging",
+    "deploy:production": "sls deploy --stage production",
+    "invoke:staging": "sls invoke --stage staging --function",
+    "invoke:production": "sls invoke --stage production --function"
+  },
+  "author": "otofu-square",
+  "license": "ISC"
+}

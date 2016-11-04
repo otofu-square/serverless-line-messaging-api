@@ -10,5 +10,10 @@
     "invoke:production": "sls invoke --stage production --function"
   },
   "author": "otofu-square",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-plugin-import": "^2.1.0"
+  }
 }

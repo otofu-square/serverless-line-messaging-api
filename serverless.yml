@@ -10,5 +10,5 @@ functions:
     handler: handler.hello
     events:
       - http:
-        path: webhook_events
-        method: post
+          path: webhook_events
+          method: post

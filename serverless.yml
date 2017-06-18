@@ -2,13 +2,28 @@ service: serverless-line-messaging-api-endpoint
 
 provider:
   name: aws
-  runtime: nodejs4.3
+  runtime: nodejs6.10
   region: ap-northeast-1
+
+package:
+  exclude:
+    - README.md
+    - .envrc
+    - .envrc.skeleton
+    - .eslintrc.js
+    - package.json
+    - node_modules/**
+    - yarn.lock
 
 functions:
   hello:
     handler: handler.hello
+    environment:
+      STAGE: ${env:STAGE}
     events:
       - http:
-          path: webhook_events
+          path: webhook-events
           method: post
+
+plugins:
+  - serverless-plugin-typescript

@@ -1,15 +1,14 @@
-export const hello = (event, context, callback): void => {
+import { APIGatewayEvent, Context, Callback } from 'aws-lambda';
+
+export const hello = (
+  event: APIGatewayEvent,
+  context: Context,
+  callback: Callback,
+): void => {
   const response = {
     statusCode: 200,
-    body: JSON.stringify({
-      input: event
-    })
+    body: JSON.stringify({ input: event }),
   };
-
-  console.log(
-    JSON.stringify({
-      input: event
-    })
-  );
-  callback(null, response);
+  console.log(JSON.stringify({ input: event }));
+  callback(undefined, response);
 };

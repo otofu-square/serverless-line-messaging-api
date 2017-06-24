@@ -10,7 +10,6 @@ package:
     - README.md
     - .envrc
     - .envrc.skeleton
-    - .eslintrc.js
     - package.json
     - node_modules/**
     - yarn.lock

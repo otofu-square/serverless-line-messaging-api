@@ -10,14 +10,13 @@ package:
     - README.md
     - .envrc
     - .envrc.skeleton
-    - .eslintrc.js
     - package.json
     - node_modules/**
     - yarn.lock
 
 functions:
   hello:
-    handler: handler.hello
+    handler: src/handler.hello
     environment:
       STAGE: ${env:STAGE}
     events:

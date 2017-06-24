@@ -12,9 +12,6 @@
   "author": "otofu-square",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^3.9.1",
-    "eslint-config-airbnb-base": "^9.0.0",
-    "eslint-plugin-import": "^2.1.0",
     "serverless-plugin-typescript": "^0.3.1"
   }
 }

@@ -16,6 +16,8 @@
     "@types/node": "^8.0.2",
     "aws-sdk": "^2.77.0",
     "serverless": "^1.16.0",
-    "serverless-plugin-typescript": "^0.3.1"
+    "serverless-plugin-typescript": "0.5.0",
+    "tslint": "^5.5.0",
+    "tslint-config-prettier": "^1.1.0"
   }
 }
